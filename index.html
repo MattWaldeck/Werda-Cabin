@@ -16,6 +16,14 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
     />
     <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"
+></script>
+
+    <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
@@ -158,35 +166,66 @@
 <div class="best-plans" id="pricing" data-aos="fade-up">
   <div class="container">
     <div class="heading-blog">
-      <h1>Interior</h1>
+      <h1>Interior/Exterior</h1>
       <div class="blog-container">
         <p>
-          Step into unparalleled luxury with our thoughtfully designed interior, featuring premium appliances, plush bedding, and stylish furnishings that redefine comfort and elegance.
+          Step into unparalleled luxury with our thoughtfully designed interior
+          and breathtaking exterior views. From premium appliances and plush
+          bedding to stunning landscapes, experience a perfect blend of comfort
+          and elegance.
         </p>
       </div>
     </div>
     <div class="plan-contents">
-      <div class="plan-card" data-aos="fade-down">
-        <img src="img/FourC.jpeg" alt="classic room" />
+      <!-- Plan Cards for Images -->
+      <div class="plan-card" data-aos="fade-up">
+        <img src="img/FourC.jpeg" alt="Cozy Bedroom with Wooden Finish" />
       </div>
       <div class="plan-card" data-aos="fade-up">
-        <img src="img/BedLightDoor.jpeg" alt="luxury room" />
+        <img src="img/BedLightDoor.jpeg" alt="Luxurious Bedroom with Ambient Lighting" />
       </div>
       <div class="plan-card" data-aos="fade-up">
-        <img src="img/BathroomMirror.jpeg" alt="modern room" />
+        <img src="img/BathroomMirror.jpeg" alt="Modern Bathroom with Mirror" />
       </div>
       <div class="plan-card" data-aos="fade-up">
-        <img src="img/Toilet.jpeg" alt="modern room" />
+        <img src="img/Toilet.jpeg" alt="Minimalist Bathroom Design" />
       </div>
       <div class="plan-card" data-aos="fade-up">
-        <img src="img/RoomOutside.jpeg" alt="modern room" />
+        <img src="img/RoomOutside.jpeg" alt="Room Overlooking Stunning Scenery" />
       </div>
       <div class="plan-card" data-aos="fade-up">
-        <img src="img/Bed.jpeg" alt="modern room" />
+        <img src="img/Bed.jpeg" alt="Comfortable Bedroom with Plush Bedding" />
       </div>
+      <div class="plan-card" data-aos="fade-up">
+        <img src="img/CabinWindow.jpeg" alt="Rustic Cabin Window View" />
+      </div>
+      <div class="plan-card" data-aos="fade-up">
+        <img src="img/HotTub.jpeg" alt="Relaxing Hot Tub Experience" />
+      </div>
+      <div class="plan-card" data-aos="fade-up">
+        <img src="img/DamMountain.jpeg" alt="Stunning Mountain and Dam View" />
+      </div>
+      <div class="plan-card" data-aos="fade-up">
+        <img src="img/Firewood.jpeg" alt="Rock Formation Near the Cabin" />
+      </div>
+      <div class="plan-card" data-aos="fade-up">
+        <img src="img/Chairs.jpeg" alt="Beautiful Cabin with Scenic View" />
+      </div>
+      <div class="plan-card" data-aos="fade-up">
+        <img src="img/OutsideatRock.jpeg" alt="Outdoor View of the Cabin and Rocks" />
+      </div>
+      <div class="plan-card" data-aos="fade-up">
+        <img src="img/Mountain.jpeg" alt="Outdoor View of the Cabin and Rocks" />
     </div>
-    
+    <div class="plan-card" data-aos="fade-up">
+      <img src="img/opdam.jpeg" alt="Outdoor View of the Cabin and Rocks" />
   </div>
+  <div class="plan-card" data-aos="fade-up">
+    <img src="img/Sunset.jpeg" alt="Outdoor View of the Cabin and Rocks" />
+</div>
+    </div>
+  </div>
+</div>
 </div>
 
 
@@ -235,30 +274,28 @@
         </div>
       </div>
     </div>
+    <!-- Book Now Section -->
+    <div id="book-now-section" class="book-now-section">
+      <div class="container">
+        <h2>Ready to Book Your Stay?</h2>
+        <p>Use the calendar below to view availability and book directly on Airbnb.</p>
+        <a
+        href="https://www.airbnb.co.za/rooms/1176834180472791861?adults=1&children=0&infants=0&check_in=2025-01-03&check_out=2025-01-08"
+        target="_blank"
+        class="airbnb-link"
+      >
+        Book on Airbnb
+      </a>
+        <div id="calendar" class="calendar-container"></div>
 
-        <!-- Book Now Section -->
-<div id="book-now-section" class="book-now-section">
-  <div class="container">
-    <h2>Ready to Book Your Stay?</h2>
-    <p>
-      Use the links below to view availability, add the iCal calendar to your app, or book directly on Airbnb.
-    </p>
-    <a
-      href="https://airbnb.com/calendar/ical/your-unique-link-here"
-      target="_blank"
-      class="ical-link"
-    >
-      View Airbnb iCal
-    </a>
-    <a
-      href="https://www.airbnb.co.za/rooms/1176834180472791861?adults=1&children=0&infants=0&check_in=2025-01-03&check_out=2025-01-08"
-      target="_blank"
-      class="airbnb-link"
-    >
-      Book on Airbnb
-    </a>
-  </div>
-</div>
+      </div>
+
+      <!-- Calendar Display -->
+      <div id="calendar" class="calendar-container"></div>
+    </div>
+
+
+
 
     <!-- Other information section -->
 
