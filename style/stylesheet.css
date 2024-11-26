@@ -922,3 +922,41 @@ footer span {
 .book-now-section .airbnb-link:hover {
   background-color: #0c382c;
 }
+
+/* Adjust the calendar container size */
+.calendar-container {
+  max-width: 800px; /* Limit the width of the calendar */
+  margin: 0 auto; /* Center the calendar */
+  padding: 10px; /* Add padding around the calendar */
+  background-color: #ffffff; /* Background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Adjust calendar font size for compact look */
+.fc {
+  font-size: 1 rem; /* Reduce font size for compact appearance */
+}
+
+/* Adjust the header to be more compact */
+.fc-toolbar {
+  font-size: 0.9rem; /* Compact font size */
+  padding: 0.5rem; /* Reduce padding */
+}
+
+/* Adjust the cells to make them smaller */
+.fc-daygrid-day-frame {
+  padding: 4px; /* Smaller padding inside each day cell */
+}
+
+/* Optional: Style reserved/unavailable dates differently */
+.fc-event {
+  background-color: #8b2121 !important; /* Light green background */
+  border: none !important; /* Remove border */
+  color: #1a6b54 !important; /* Text color */
+}
+
+.fc-event:hover {
+  background-color: #d0f0e4 !important; /* Darker green on hover */
+  cursor: pointer; /* Pointer cursor on hover */
+}
