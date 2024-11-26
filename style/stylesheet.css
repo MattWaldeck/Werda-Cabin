@@ -142,7 +142,7 @@ h5 {
 .main-image {
   height: 100%;
   width: 50%;
-  background-image: url('../img/KantvanHuis.jpeg');
+  background-image: url('../img/VanDam.jpeg');
   image-rendering: optimizeSpeed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -959,4 +959,33 @@ footer span {
 .fc-event:hover {
   background-color: #d0f0e4 !important; /* Darker green on hover */
   cursor: pointer; /* Pointer cursor on hover */
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-option {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .main-text h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+a {
+  padding: 10px;
+  touch-action: manipulation;
 }
