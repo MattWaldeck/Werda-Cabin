@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0px;
 }
 
@@ -36,7 +36,7 @@ h2 {
 }
 
 h2::after {
-  content: "";
+  content: '';
   display: block;
   width: 30%;
   border-top: 2.5px solid #1a6b54;
@@ -45,7 +45,7 @@ h2::after {
 }
 
 h3::after {
-  content: "";
+  content: '';
   display: block;
   text-align: center;
   width: 30%;
@@ -142,7 +142,7 @@ h5 {
 .main-image {
   height: 100%;
   width: 50%;
-  background-image: url("../img/japan-views.jpg");
+  background-image: url('../img/Rockandcabin.jpeg');
   image-rendering: optimizeSpeed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -175,7 +175,7 @@ h5 {
 }
 
 .box-contents h2::after {
-  content: "";
+  content: '';
   width: 30%;
   border-top: none;
 }
@@ -202,7 +202,7 @@ h5 {
 }
 
 .plan-content h4::after {
-  content: "";
+  content: '';
   display: block;
   text-align: center;
   width: 30%;
@@ -232,7 +232,7 @@ h5 {
 
 .box-description {
   width: 50%;
-  margin-right: 30px;
+  margin-right: 1px;
 }
 
 .box-description h2 {
@@ -240,13 +240,13 @@ h5 {
 }
 
 .box-description h2::after {
-  content: "";
+  content: '';
   width: 30%;
   border-top: none;
 }
 
 .box-description p {
-  width: 60%;
+  width: 100%;
 }
 
 .services {
@@ -620,7 +620,7 @@ input {
 
 .email-submit {
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.7rem;
   width: 80px;
   background-color: #1a6b54;
@@ -633,24 +633,73 @@ input {
   cursor: pointer;
 }
 
-.social-media span {
-  padding: 7px;
-  background-color: #fff;
-  color: #1a6b54;
-  border-radius: 90px;
-  margin-right: 10px;
+.social-media {
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+  padding-top: 35px;
+  font-size: 24px; /* Increase the base font size for larger icons */
 }
 
-.social-media {
-  float: left;
-  padding-top: 27px;
-  font-size: 15px;
+.social-media span {
+  padding: 15px; /* Increase padding for larger circular icons */
+  background-color: #fff;
+  color: #1a6b54;
+  border-radius: 50%; /* Ensures circular shape */
+  margin-right: 15px; /* Add consistent spacing between icons */
+  display: inline-flex; /* Ensures proper alignment */
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Ensure consistent size for the circular icons */
+  height: 50px; /* Ensure consistent size for the circular icons */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-media span:hover {
+  background-color: #1a6b54; /* Change background color on hover */
+  color: #fff; /* Change icon color on hover */
+  transform: scale(1.2); /* Slight zoom effect on hover */
 }
 
 footer {
-  background-color: #1a6b54;
+  background-color: #1a6b54; /* Background color of the footer */
   width: 100%;
-  height: 80px;
+  padding: 0; /* Remove padding */
+  color: #fff; /* Text color */
+}
+
+footer .container {
+  display: flex; /* Align child elements in a row */
+  justify-content: space-between; /* Space out content */
+  align-items: center; /* Center align items vertically */
+  max-width: 1200px; /* Limit the width of the footer content */
+  margin: 0 auto; /* Center content horizontally */
+  padding: 20px 20px; /* Add only horizontal padding */
+}
+
+footer .social-media {
+  display: flex; /* Align icons horizontally */
+  gap: 15px; /* Add spacing between icons */
+}
+
+footer .social-media a {
+  font-size: 1.2rem; /* Adjust icon size */
+  color: #fff; /* Icon color */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+footer .social-media a:hover {
+  transform: scale(1.2); /* Slight zoom effect on hover */
+  color: #f1c40f; /* Change color on hover */
+}
+
+footer p {
+  font-size: 0.9rem; /* Adjust text size for readability */
+  margin: 0; /* Remove extra margin */
+  color: #e6e6e6; /* Subtle text color */
+}
+
+footer span {
+  font-size: 1rem; /* Adjust icon size inside text */
 }
 
 .white {
@@ -664,14 +713,212 @@ footer {
   margin: 0px;
 }
 
-footer p {
-  font-size: 13px;
-}
-
 .clear {
   clear: left;
 }
 
 .aos-init:not(.aos-animate):after {
   position: fixed;
+}
+
+/* Weird Cabin Stuff Section */
+#weird-cabin-stuff {
+  padding: 50px 20px;
+  background-color: #fdf8f4; /* A warm, inviting background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.box-description {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.box-description h2 {
+  font-size: 2.8rem; /* Increased font size for the title */
+  color: #5a2d82; /* A unique color for the title */
+  margin-bottom: 10px; /* Added spacing below the title */
+}
+
+.box-description p {
+  font-size: 1.2rem; /* Increased font size for better readability */
+  color: rgba(60, 60, 60, 0.8);
+  margin-bottom: 40px; /* Add more spacing below the description text */
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 1rem; /* Slightly increased font size for the features list */
+  color: #333;
+}
+
+.features-list li {
+  margin: 15px 0; /* Increased spacing between items */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align the feature text */
+}
+
+.features-list li span {
+  margin-right: 10px;
+  font-size: 1.8rem; /* Slightly larger icons */
+}
+
+/* Grid for Images */
+.grid-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns in the grid */
+  gap: 30px; /* Increased spacing between grid items */
+  justify-content: center; /* Center the grid */
+  margin-top: 30px;
+}
+
+.image-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px; /* Rounded corners for the image */
+  display: block;
+}
+
+.image-card:hover {
+  transform: scale(1.1); /* Enhanced zoom effect */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Grid for Images */
+.grid-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns in the grid */
+  gap: 20px; /* Space between grid items */
+  justify-content: center; /* Center the grid */
+  margin-top: 30px;
+}
+
+.image-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px; /* Rounded corners for the image */
+  display: block;
+}
+
+.image-card:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Image Section */
+.image-services {
+  margin-top: 50px;
+}
+
+.additional-images {
+  display: flex;
+  justify-content: center; /* Center images */
+  flex-wrap: wrap; /* Wrap to next row if necessary */
+  gap: 20px; /* Space between images */
+}
+
+.additional-images img {
+  width: calc(50% - 10px); /* Each image takes up 20% of the row */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+  cursor: pointer;
+}
+
+.additional-images img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.plan-contents {
+  display: flex;
+  justify-content: center; /* Center align the images */
+  flex-wrap: wrap; /* Ensure images wrap on smaller screens */
+  gap: 20px; /* Add spacing between the images */
+  margin-top: 50px; /* Add some space from the top section */
+}
+
+.plan-card {
+  flex: 1 1 calc(30% - 20px); /* Each card takes up ~30% of the row */
+  max-width: calc(30% - 20px); /* Maintain consistent card size */
+  border-radius: 12px; /* Rounded corners for each card */
+  overflow: hidden; /* Ensure image edges stay rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for each card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff; /* Add a white background for uniformity */
+}
+
+.plan-card img {
+  width: 100%;
+  height: auto; /* Maintain image aspect ratio */
+  display: block; /* Prevent inline space below images */
+}
+
+.plan-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Optional: Add uniform spacing at the bottom of the cards */
+.plan-card {
+  margin-bottom: 20px;
+}
+
+/* Book Now Section */
+.book-now-section {
+  padding: 50px 20px;
+  background-color: #fdf8f4; /* Warm background color */
+  text-align: center;
+  border-top: 2px solid #ddd;
+}
+
+.book-now-section h2 {
+  font-size: 2.5rem;
+  color: #5a2d82; /* Unique color for the title */
+  margin-bottom: 20px;
+}
+
+.book-now-section p {
+  font-size: 1.2rem;
+  color: rgba(60, 60, 60, 0.8);
+  margin-bottom: 30px;
+}
+
+.book-now-section .ical-link,
+.book-now-section .airbnb-link {
+  display: inline-block;
+  background-color: #1a6b54;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.book-now-section .ical-link:hover,
+.book-now-section .airbnb-link:hover {
+  background-color: #0c382c;
 }
