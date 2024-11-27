@@ -1,353 +1,357 @@
 /* Bigger Screen Responsive */
-
 @media (max-width: 1200px) {
+  .main-text {
+    width: 70%;
+  }
 
-    .main-text {
-        width: 70%;
-    }
-
-    .main-image {
-        width: 30%;
-    }
+  .main-image {
+    width: 30%;
+  }
 }
 
 /* Fix form */
 @media screen and (max-width: 1055px) {
-    input {
-        width: 170px;
-    }
+  input {
+    width: 170px;
+  }
 
-    .company-info p {
-        margin-bottom: 0px;
-    }
+  .company-info p {
+    margin-bottom: 0px;
+  }
 }
 
 /* Responsive Tablet */
 @media (max-width: 1000px) {
+  h4 {
+    font-size: 0.8rem;
+  }
 
-    h4 {
-        font-size: 0.8rem;
-    }
+  .rounded {
+    margin-right: 10px;
+  }
 
-    .rounded {
-        margin-right: 10px;
-    }
+  .blog-author {
+    padding-left: 50px;
+  }
 
-    .blog-author {
-        padding-left: 50px;
-    }
+  .second {
+    margin: 0;
+  }
 
-    .second {
-        margin: 0;
-    }
-    
-    .section-title h3 {
-        font-size: 1.5rem;
-    }
+  .section-title h3 {
+    font-size: 1.5rem;
+  }
 
-    .review {
-        flex-wrap: wrap;
-        padding-bottom: 200px;
-    }
-    
-    .image-review {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
-    .review-information {
-        top: 80px;
-    }
-    
-    .image-review img {
-        width: 100%;
-    }
+  .review {
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+  }
 
-    .review-box {
-        width: 100%;
-        margin-left: 0;
-    }
+  .image-review {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
 
-    .more-information-section {
-        padding-bottom: 650px;
-        text-align: center;
-    }
+  .review-information {
+    top: 80px;
+  }
 
-    .more-information-section a {
-        text-align: center;
-    }
+  .image-review img {
+    width: 100%;
+  }
 
-    .company-info, .company-info p {
-        width: 100%;
-    }
+  .review-box {
+    width: 100%;
+    margin-left: 0;
+  }
 
-    .legal {
-        width: 100%;
-    }
+  .more-information-section {
+    padding-bottom: 50px; /* Reduced padding */
+    text-align: center;
+  }
 
-    .resources {
-        width: 100%;
-    }
+  .more-information-section a {
+    text-align: center;
+  }
 
-    .newsletter {
-        width: 100%;
-        float: left;
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-    }
+  .company-info,
+  .company-info p,
+  .legal,
+  .resources,
+  .newsletter {
+    width: 100%; /* Stack content on smaller screens */
+  }
 
-    .newsletter p {
-        margin-top: 0px;
-    }
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter p {
+    margin-top: 0px;
+  }
 }
 
 /* Responsive Medium */
 @media screen and (max-width: 900px) {
+  .navbar {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    border-radius: 0;
+  }
 
-    .navbar {
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        width: 100vw;
-        border-radius: 0px;
-    }
+  .blog {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
 
-    .blog {
-        width: 100%;
-        margin-bottom: 50px;
-        margin-right: 0;
-    }
+  .blog-contents {
+    flex-wrap: wrap;
+  }
 
-    .second {
-        margin-right: 0;
-    }
+  .image-about,
+  .image-services {
+    display: none; /* Hide images on smaller screens */
+  }
 
-    .blog-contents {
-        flex-wrap: wrap;
-    }
+  .box-about,
+  .box-description {
+    width: 100%; /* Full width for content */
+  }
 
-    .image-about {
-        width: 20%;
-        background-image: url('../img/resort.jpg');
-    }
+  .plan-contents {
+    flex-wrap: wrap;
+  }
 
-    .image-about img {
-        display: none;
-    }
-
-    .box-about {
-        width: 70%;
-    }
-
-    .image-services {
-        width: 20%;
-        background-image: url(../img/profile-pic.jpg);
-    }
-
-    .image-services img {
-        display: none;
-    }
-
-    .box-description {
-        width: 80%;
-        margin: 0;
-    }
-    .plan-contents {
-        flex-wrap: wrap;
-    }
-
-    .plan-card {
-        width: 60%;
-        margin: 0 20%;
-        margin-bottom: 60px !important;
-    }
-
+  .plan-card {
+    width: 80%;
+    margin: 10% auto;
+  }
 }
 
 /* Responsive Smartphone */
 @media all and (max-width: 670px) {
+  .main-image {
+    display: none; /* Hide unnecessary images on small screens */
+  }
 
-    .main-image {
-        width: 20%;
-    }
+  .main-text {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
 
-    .main-text {
-        width: 80%;
-    }
+  .container-main {
+    width: 100%;
+    margin: 0;
+    padding-top: 50px;
+  }
 
-    .container-main {
-        width: 60%;
-        margin: 0 0 0 100px;
-        padding-top: 170px;
-    }
+  .navbar-option {
+    display: none;
+  }
 
-    .navbar-option {
-        display: none;
-    }
+  .navbar-option.responsive {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+  }
 
-    .navbar-option.responsive {
-        display: block;
-    }
+  .navbar-option.responsive a {
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
 
-    .navbar-option.responsive a {
-        margin-top: 10px;
-    }
+  .navbar-option.responsive a:hover {
+    background-color: #1a6b54;
+    color: #fff;
+  }
 
-    .navbar-option.responsive a:hover {
-        background-color: #1a6b54;
-        border-bottom: none;
-        color: #fff;
-    }
+  .right-navbar a.hamburger {
+    display: block;
+  }
 
-    .right-navbar a.hamburger {
-        display: block;
-        float: right;
-    }
+  .blog {
+    width: 100%;
+  }
 
-    .left-navbar.responsive {
-        display: block;
-    }
+  .section-title h3 {
+    font-size: 1.2rem;
+  }
 
-    .navbar.responsive {
-        position: fixed;
-    }
+  .review {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    margin-bottom: 40px; /* Add space below the section */
+    text-align: center;
+  }
 
-    .navbar.responsive a.hamburger {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
+  .review-information {
+    width: 90%; /* Reduce width for better spacing */
+    margin: 0 auto; /* Center content */
+  }
 
-    .navbar.responsive a.bookNow {
-        position: absolute;
-        top: 21px;
-        right: 52px;
-    }
+  .rounded-image {
+    width: 70px; /* Adjust reviewer image size */
+    height: 70px;
+    margin-bottom: 10px; /* Add spacing below image */
+    position: relative; /* Prevent floating or overlap */
+  }
 
-    .navbar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    
-    .blog {
-        width: 100%;
-        margin-bottom: 50px;
-    }
+  .reviewer-name {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin-bottom: 1px;
+  }
 
-    .second {
-        margin: 0;
-    }
+  /* "Ready to Book Your Stay?" Section */
+  .book-now-section {
+    padding: 20px; /* Add consistent padding */
+    text-align: center; /* Center-align content */
+  }
 
-    .blog-contents {
-        flex-wrap: wrap;
-    }
+  .book-now-section h2 {
+    font-size: 1.5rem; /* Adjust heading size */
+    margin-bottom: 20px; /* Add space below heading */
+  }
 
-    .section-title h3 {
-        font-size: 1.2rem;
-    }
+  .book-now-section p {
+    font-size: 1rem; /* Adjust paragraph size */
+    margin-bottom: 20px; /* Add space below paragraph */
+    line-height: 1.5; /* Improve readability */
+  }
 
-    .review {
-        margin-bottom: 60px;
-    }
+  .book-now-section .airbnb-link {
+    display: block; /* Ensure the button spans full width */
+    max-width: 250px; /* Set a max width for the button */
+    margin: 10px auto; /* Center the button with spacing */
+    padding: 12px; /* Add padding for better touch area */
+    font-size: 1rem; /* Adjust button font size */
+  }
 
-    .reviewer-name {
-        font-size: 1rem;
-    }
+  /* Fix Overlap of Airbnb Button and Reviewer */
+  .airbnb-link {
+    margin-top: 40px; /* Add space above button */
+  }
 
-    .white {
-        padding-top: 20px;
-    }
+  /* Ensure calendar container aligns properly */
+  .calendar-container {
+    width: 100%; /* Make full width */
+    margin: 30px auto; /* Add spacing around the calendar */
+  }
+}
 
-    .social-media {
-        padding-top: 25px;
-    }
+/* Additional Fix for Very Small Screens */
+@media all and (max-width: 485px) {
+  /* Adjust reviewer image for smallest screens */
+  .rounded-image {
+    width: 60px; /* Smaller image size */
+    height: 60px;
+  }
 
-    .review-information {
-        width: 90%;
-    }
+  .review {
+    margin-bottom: 20px; /* Add smaller spacing */
+  }
+
+  /* Reduce font sizes further */
+  .book-now-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .book-now-section p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .book-now-section .airbnb-link {
+    max-width: 200px; /* Adjust button width */
+    font-size: 0.9rem;
+  }
+
+  /* Ensure calendar container aligns properly */
+  .calendar-container {
+    width: 100%; /* Make full width */
+    margin: 20px auto; /* Add spacing around the calendar */
+  }
 }
 
 /* Responsive lower screen */
 @media screen and (max-width: 600px) {
-    .services {
-        display: inline-block;
-    }
+  .services {
+    display: inline-block;
+  }
+
+  .grid-images {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .plan-card {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 
 /* Lower smartphone screen */
 @media screen and (max-width: 485px) {
-    .container {
-        padding: 0 20px;
-    }
+  .container {
+    padding: 0 20px;
+  }
 
-    h1 {
-        font-size: 2.5rem;
-    }
+  h1 {
+    font-size: 2rem;
+  }
 
-    h2 {
-        font-size: 2.0rem;
-    }
+  h2 {
+    font-size: 1.5rem;
+  }
 
-    .main-text {
-        width: 90%;
-    }
+  .main-text {
+    width: 100%;
+  }
 
-    .main-image {
-        width: 10%;
-    }
+  .main-contents {
+    height: auto;
+    text-align: center;
+  }
 
-    .main-contents {
-        height: 600px;
-    }
+  .container-main {
+    width: 100%;
+    padding-top: 20px;
+  }
 
-    .container-main {
-        width: 80%;
-        margin: 0 0 0 50px;
-        padding-top: 100px;
-    }
+  .box-about {
+    width: 100%;
+    margin-left: 0;
+  }
 
-    .image-about {
-        width: 13%;
-    }
-
-    .box-about {
-        width: 90%;
-        margin-left: 0px;
-    }
-
-    .box-description p {
-        width: 90%;
-    }
-
-    .image-services {
-        width: 13%;
-    }
-
-    .plan-card {
-        width: 80%;
-        margin: 0 10%;
-    }
+  .plan-card {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
-
 
 /* Responsive lowest screen */
 @media screen and (max-width: 385px) {
-    .blog-info {
-        display: block;
-    }
+  .blog-info {
+    display: block;
+  }
 
-    .blog-author {
-        padding: 20px 0 0 0;
-    }
+  .blog-author {
+    padding: 20px 0 0 0;
+  }
 
-    .blog-contents h4 {
-        width: 100%;
-    }
+  .blog-contents h4 {
+    width: 100%;
+  }
 
-    .blog-contents p {
-        width: 90%;
-    }
+  .blog-contents p {
+    width: 90%;
+  }
 }
-
