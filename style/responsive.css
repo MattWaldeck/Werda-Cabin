@@ -74,12 +74,15 @@
   }
 
   .more-information-section {
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 160px;
+    background-color: #ffffff00;
     text-align: center;
   }
-
+  .more-information-section .more-information-section p,
   .more-information-section a {
     text-align: center;
+    font-size: 0.8rem;
   }
 
   .company-info,
@@ -88,6 +91,8 @@
   .resources,
   .newsletter {
     width: 100%;
+
+    margin: 0 auto;
   }
 
   .newsletter {
@@ -132,6 +137,14 @@
 
 /* Main Section Adjustments */
 @media (max-width: 768px) {
+  .calendar-container {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+  }
   .main-contents {
     flex-direction: column;
   }
@@ -148,6 +161,271 @@
 
   .main-text p {
     font-size: 1rem;
+  }
+  .container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+  }
+
+  /* ABOUT SECTION */
+
+  .about-section {
+    padding-top: 50px;
+  }
+
+  .about-contents {
+    display: block;
+  }
+
+  .image-about {
+    width: 100%;
+    margin-right: 30px;
+  }
+
+  .box-about {
+    width: 100%;
+    margin: 0;
+  }
+
+  .box-contents {
+    width: 100%;
+  }
+
+  .box-contents h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .box-contents h2::after {
+    content: '';
+    width: 100%;
+    border-top: none;
+  }
+
+  .image-about img {
+    width: 100%;
+    border-radius: 7px;
+  }
+
+  /* Good To Know Section */
+  .our-services {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .services-contents {
+    display: block;
+  }
+
+  .image-services {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .image-services img {
+    width: 100%;
+    border-radius: 7px;
+  }
+
+  .box-description {
+    width: 100%;
+    margin-right: 1px;
+  }
+
+  .box-description h2 {
+    margin: 0;
+  }
+
+  .box-description h2::after {
+    content: '';
+    width: 100%;
+    border-top: none;
+  }
+
+  .box-description p {
+    width: 100%;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .services-icon {
+    padding: 10px 0;
+  }
+
+  .services-icon .fa {
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .grid-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three columns in the grid */
+    gap: 10px;
+
+    justify-content: center; /* Center the grid */
+    margin-top: 30px;
+  }
+  /* Interior/Exterior */
+  .heading-blog {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .blog-container {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .blog-and-news {
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: auto;
+  }
+
+  .blog-contents {
+    display: flex;
+  }
+
+  .plan-card {
+    flex: none; /* Each card takes up ~30% of the row */
+    max-width: 100%; /* Maintain consistent card size */
+    border-radius: 12px; /* Rounded corners for each card */
+    overflow: hidden; /* Ensure image edges stay rounded */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for each card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; /* Add a white background for uniformity */
+  }
+
+  .plan-card img {
+    width: 100%;
+    height: auto; /* Maintain image aspect ratio */
+    display: block; /* Prevent inline space below images */
+    margin-left: 0px;
+  }
+  .plan-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center; /* Center align the images */
+    gap: 10px; /* Add spacing between the images */
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  /* See Satisfied Traveler Reviews */
+  .section-title {
+    font-style: italic;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+  .review {
+    display: flex;
+  }
+
+  .image-review {
+    width: 100%;
+    margin-right: 0rem;
+  }
+  .review-box {
+    width: 100%;
+    margin-left: 0rem;
+    display: inline-block;
+    position: relative;
+    padding: 0px;
+    padding-top: 1px;
+  }
+  .review-information {
+    position: absolute;
+    top: 1%;
+  }
+
+  .rounded-image {
+    float: left;
+    width: 5.5rem;
+    border-radius: 100%;
+    margin-right: 0px;
+  }
+
+  .reviewer-name {
+    padding-top: 20px;
+    margin-bottom: -5px;
+    font-size: 1.3rem;
+  }
+
+  .reviews-section {
+    padding-bottom: 420px;
+  }
+
+  /* Book Now Section */
+  .book-now-section {
+    padding: 10 px 20px;
+    background-color: #ffffff; /* Warm background color */
+    text-align: center;
+    border-top: 2px solid #ddd;
+  }
+
+  .book-now-section h2 {
+    font-size: 2.5rem;
+    color: #5a2d82; /* Unique color for the title */
+    margin-bottom: 20px;
+  }
+
+  .book-now-section p {
+    font-size: 1.2rem;
+    color: rgba(60, 60, 60, 0.8);
+    margin-bottom: 30px;
+  }
+
+  .book-now-section .ical-link,
+  .book-now-section .airbnb-link {
+    display: inline-block;
+    background-color: #1a6b54;
+    color: #fff;
+    text-decoration: none;
+
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .company-info {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20 px;
+    padding-bottom: 20 px;
+    background-color: #ffffff;
+    border-radius: 80px;
+  }
+
+  .company-info p {
+    width: 80%;
+  }
+  footer {
+    background-color: #1a6b54; /* Background color of the footer */
+    width: 100%;
+    padding: 0; /* Remove padding */
+    color: #fff; /* Text color */
+    text-align: center;
+  }
+
+  footer .container {
+    display: flex; /* Align child elements in a row */
+    justify-content: space-between; /* Space out content */
+    align-items: center; /* Center align items vertically */
+    max-width: 100%; /* Limit the width of the footer content */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 20px 20px; /* Add only horizontal padding */
   }
 }
 
@@ -276,7 +554,7 @@
 }
 
 /* Responsive Smartphone */
-@media (max-width: 670px) {
+/* @media (max-width: 670px) {
   .main-image {
     display: none;
   }
@@ -339,4 +617,4 @@
     padding: 12px;
     font-size: 1rem;
   }
-}
+} */
