@@ -171,6 +171,62 @@
     margin: 0px;
     padding: 20px;
   }
+  /* Navbar */
+  .navbar {
+    display: flex;
+
+    align-items: center; /* Align items vertically */
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 1px 1px;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    flex-shrink: 4; /* Ensure the logo doesn't shrink */
+    margin-right: 1px; /* Add spacing between the logo and links */
+  }
+
+  .logo a {
+    font-size: 1rem; /* Adjust font size for readability */
+    font-weight: bold;
+    color: #1a6b54;
+    text-decoration: none;
+  }
+
+  .navbar-option {
+    display: flex; /* Align items side by side */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 20px; /* Spacing between links */
+    flex-grow: 1; /* Take up remaining space */
+  }
+
+  .navbar-option a {
+    font-size: 0.9rem; /* Slightly larger font size for better readability */
+    font-weight: bold;
+    color: #1a6b54;
+    text-decoration: none;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  .navbar-option a:hover {
+    border-bottom: 1px solid #1a6b54;
+    transition: 0.3s ease-in-out;
+  }
+
+  .right-navbar {
+    display: none; /* Hide right-navbar for mobile */
+  }
+
+  .hamburger {
+    display: none; /* Add hamburger menu support if required */
+  }
 
   /* ABOUT SECTION */
 
@@ -340,8 +396,8 @@
     margin-left: 0rem;
     display: inline-block;
     position: relative;
-    padding: 0px;
-    padding-top: 1px;
+    padding: 10px;
+    padding-top: 80px;
   }
   .review-information {
     position: absolute;
@@ -353,12 +409,14 @@
     width: 5.5rem;
     border-radius: 100%;
     margin-right: 0px;
+    margin-top: 1px;
   }
 
   .reviewer-name {
     padding-top: 20px;
     margin-bottom: -5px;
     font-size: 1.3rem;
+    margin-top: -10px;
   }
 
   .reviews-section {

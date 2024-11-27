@@ -37,6 +37,14 @@
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./scripts/script.js" type="module"></script>
+    <style>
+      /* Hide navbar by default for small screens */
+      @media (max-width: 768px) {
+        .navbar {
+          display: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="main-section" id="home">
@@ -312,9 +320,6 @@
       </div>
     </div>
 
-
-
-
     <!-- Footer section -->
     <footer>
       <div class="container">
@@ -333,8 +338,26 @@
       </div>
     </footer>
   </body>
-
   <script>
-    AOS.init();
+    // Hide navbar on smaller screens dynamically
+    document.addEventListener("DOMContentLoaded", function () {
+      const navbar = document.getElementById("navbar");
+
+      function checkScreenSize() {
+        if (window.innerWidth <= 768) {
+          navbar.style.display = "none"; // Hide navbar for mobile
+        } else {
+          navbar.style.display = "flex"; // Show navbar for larger screens
+        }
+      }
+
+      // Check on page load
+      checkScreenSize();
+
+      // Check on window resize
+      window.addEventListener("resize", checkScreenSize);
+    });
+
+    AOS.init(); // Initialize AOS animations
   </script>
 </html>
