@@ -173,6 +173,7 @@ body {
 
   .main-text p {
     font-size: 1rem;
+    padding-top: 30px;
   }
   .container-main {
     display: flex;
@@ -182,6 +183,7 @@ body {
     width: 100%;
     margin: 0px;
     padding: 20px;
+    padding-top: 15px;
   }
   /* Navbar */
   .navbar {
