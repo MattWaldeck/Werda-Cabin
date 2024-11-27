@@ -532,10 +532,11 @@ h5 {
   width: 5.5rem;
   border-radius: 50%;
   margin-right: 25px;
+  margin-top: 50px;
 }
 
 .reviewer-name {
-  padding-top: 20px;
+  padding-top: 50px;
   margin-bottom: -5px;
   font-size: 1.3rem;
 }
