@@ -12,7 +12,7 @@ body {
 }
 
 a {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-decoration: none;
   color: black;
   display: inline-block;
@@ -69,7 +69,7 @@ h5 {
 
 .logo a {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #1a6b54;
 }
 
@@ -104,9 +104,9 @@ h5 {
 
 .right-navbar a {
   margin: 0 10px;
-  padding-top: 2px;
+  padding-top: 10px;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #1a6b54;
 }
 
@@ -486,7 +486,7 @@ h5 {
 
 .review-information {
   position: absolute;
-  top: 20%;
+  top: 7%;
 }
 
 .arrow-buttons {
@@ -540,9 +540,9 @@ h5 {
 }
 
 .more-information-section {
-  padding-top: 55px;
-  padding-bottom: 230px;
-  background-color: #e6f7f2;
+  padding-top: 10px;
+  padding-bottom: 160px;
+  background-color: #ffffff00;
 }
 
 .more-information-section a {
@@ -550,7 +550,7 @@ h5 {
   width: 100%;
   text-align: left;
   font-size: 0.8rem;
-  color: rgba(60, 60, 60, 0.8);
+  color: rgb(0, 0, 0);
 }
 
 .more-information-section a:hover {
@@ -558,7 +558,7 @@ h5 {
 }
 
 .more-information-section p {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .icon {
