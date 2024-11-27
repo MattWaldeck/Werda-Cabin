@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
 /* Bigger Screen Responsive */
 @media (max-width: 1200px) {
   .main-text {
@@ -137,6 +140,15 @@
 
 /* Main Section Adjustments */
 @media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    line-height: 70px;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
   .calendar-container {
     display: none;
   }
@@ -363,7 +375,7 @@
 
   .plan-card img {
     width: 100%;
-    height: auto; /* Maintain image aspect ratio */
+    height: 100%; /* Maintain image aspect ratio */
     display: block; /* Prevent inline space below images */
     margin-left: 0px;
   }
