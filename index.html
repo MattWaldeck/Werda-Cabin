@@ -3,7 +3,9 @@
   <head>
     <title>Werda Cabin- Home away from home</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
 
     <!-- Add icon logo -->
     <link rel="icon" href="img/CabinLogo.jpg" />
@@ -11,6 +13,7 @@
     <!-- Add necessary file and cdn -->
     <link rel="stylesheet" href="style/stylesheet.css" />
     <link rel="stylesheet" href="style/responsive.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
@@ -230,60 +233,55 @@
 
 
 
-    <!-- Review contents section -->
-    <div class="best-plans" id="blog-and-news" data-aos="fade-up">
-    <div class="reviews-section" id="reviews">
-      <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h3>See Satisfied Traveler Reviews</h3>
+    <!-- Review Section -->
+<div class="reviews-section-wrapper">
+  <div class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h3>See Satisfied Traveler Reviews</h3>
+      </div>
+      <div class="review">
+        <div class="image-review" data-aos="fade-down">
+          <img src="img/ViewCabin.jpeg" alt="views image" />
         </div>
-        <div class="review">
-          <div class="image-review" data-aos="fade-down">
-            <img src="img/ViewCabin.jpeg" alt="views image" />
-          </div>
-          <div class="review-box" data-aos="fade-down">
-            <div class="arrow-buttons">
-
+        <div class="review-box" data-aos="fade-down">
+          <div class="arrow-buttons"></div>
+          <div class="review-information">
+            <div class="content-review">
+              <span class="fa fa-quote-left" aria-hidden="true"></span>
+              <p class="italic">
+                Staying at this cabin was an unforgettable experience! The hiking route was the perfect blend of adventure and tranquility, winding through the most magical views over the farm and dam. Every turn revealed something new, from rolling green fields to crystal-clear reflections on the water. The cabin itself had a quirky, unique charm that made the stay truly special—cozy, clean, and filled with delightful surprises. Waking up to the serene landscape and enjoying a cup of coffee on the deck felt like stepping into another world. This place is a hidden gem for nature lovers and those looking for something a little offbeat. Highly recommended!
+              </p>
             </div>
-            <div class="review-information">
-              <div class="content-review">
-                <span class="fa fa-quote-left" aria-hidden="true"></span>
-                <p class="italic">
-                  Staying at this cabin was an unforgettable experience! The hiking route was the perfect blend of adventure and tranquility, winding through the most magical views over the farm and dam. Every turn revealed something new, from rolling green fields to crystal-clear reflections on the water. The cabin itself had a quirky, unique charm that made the stay truly special—cozy, clean, and filled with delightful surprises. Waking up to the serene landscape and enjoying a cup of coffee on the deck felt like stepping into another world. This place is a hidden gem for nature lovers and those looking for something a little offbeat. Highly recommended!
-                </p>
-              </div>
-              <div class="reviewer">
-                <img
-                  class="rounded-image"
-                  src="img/Nicola.jpeg"
-                  alt="reviewer image"
-                />
-                <div class="reviewer-profile">
-                  <h4 class="reviewer-name">Nicola</h4>
-                  <p>Satisfied Traveler</p>
-                </div>
+            <div class="reviewer">
+              <img class="rounded-image" src="img/Nicola.jpeg" alt="reviewer image" />
+              <div class="reviewer-profile">
+                <h4 class="reviewer-name">Nicola</h4>
+                <p>Satisfied Traveler</p>
               </div>
             </div>
-            <div class="clear"></div>
           </div>
+          <div class="clear"></div>
         </div>
       </div>
     </div>
-    <!-- Book Now Section -->
-    <div id="book-now-section" class="book-now-section">
-      <div class="container">
-        <h2>Ready to Book Your Stay?</h2>
-        <p>Use the calendar below to view availability and book directly on Airbnb.</p>
-        <a
-        href="https://www.airbnb.co.za/rooms/1176834180472791861?adults=1&children=0&infants=0&check_in=2025-01-03&check_out=2025-01-08"
-        target="_blank"
-        class="airbnb-link"
-      >
-        Book on Airbnb
-      </a>
-        <div id="calendar" class="calendar-container"></div>
+  </div>
+</div>
 
-      </div>
+<!-- Book Now Section -->
+<div id="book-now-section" class="book-now-section">
+  <div class="container">
+    <h2>Ready to Book Your Stay?</h2>
+    <p>Use the calendar below to view availability and book directly on Airbnb.</p>
+    <a
+      href="https://www.airbnb.co.za/rooms/1176834180472791861?adults=1&children=0&infants=0&check_in=2025-01-03&check_out=2025-01-08"
+      target="_blank"
+      class="airbnb-link"
+    >
+      Book on Airbnb
+    </a>
+    <div id="calendar" class="calendar-container"></div>
+  </div>
 
       <!-- Calendar Display -->
       <div id="calendar" class="calendar-container"></div>
@@ -308,12 +306,6 @@
           </a>
           <p>Tulbagh, South Africa</p>
         </div>
-
-    
-
-  
-
-     
         </div>
       </div>
     </div>

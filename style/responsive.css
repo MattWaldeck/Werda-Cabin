@@ -1,3 +1,10 @@
+/* General Reset for Consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Bigger Screen Responsive */
 @media (max-width: 1200px) {
   .main-text {
@@ -9,8 +16,8 @@
   }
 }
 
-/* Fix form */
-@media screen and (max-width: 1055px) {
+/* Fix Form */
+@media (max-width: 1055px) {
   input {
     width: 170px;
   }
@@ -67,7 +74,7 @@
   }
 
   .more-information-section {
-    padding-bottom: 50px; /* Reduced padding */
+    padding-bottom: 50px;
     text-align: center;
   }
 
@@ -80,7 +87,7 @@
   .legal,
   .resources,
   .newsletter {
-    width: 100%; /* Stack content on smaller screens */
+    width: 100%;
   }
 
   .newsletter {
@@ -94,50 +101,184 @@
   }
 }
 
-/* Responsive Medium */
-@media screen and (max-width: 900px) {
+/* Navbar Fixes */
+@media (max-width: 768px) {
   .navbar {
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    width: 100%;
-    border-radius: 0;
+    flex-direction: column;
+    padding: 10px;
   }
 
-  .blog {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar-option {
+    display: none;
+  }
+
+  .navbar-option.responsive {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
     width: 100%;
+  }
+
+  .navbar-option.responsive a {
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
+/* Main Section Adjustments */
+@media (max-width: 768px) {
+  .main-contents {
+    flex-direction: column;
+  }
+
+  .main-text,
+  .main-image {
+    width: 100%;
+  }
+
+  .main-text h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .main-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Review Section Fixes */
+@media (max-width: 768px) {
+  .reviews-section {
     margin-bottom: 50px;
-    margin-right: 0;
   }
 
-  .blog-contents {
+  .review {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+  }
+
+  .review-information {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    line-height: 1.6;
+  }
+
+  .review-box {
+    margin: 30px 0;
+  }
+
+  .rounded-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .reviewer-name {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .italic {
+    margin: 10px 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* "Book Now" Section Adjustments */
+@media (max-width: 768px) {
+  .book-now-section {
+    padding: 30px 15px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+
+  .book-now-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .book-now-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .book-now-section .airbnb-link {
+    display: block;
+    max-width: 250px;
+    margin: 15px auto;
+    padding: 12px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #1a6b54;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .airbnb-link:hover {
+    background-color: #14513f;
+  }
+}
+
+/* Calendar Section */
+@media (max-width: 768px) {
+  .calendar-container {
+    width: 100%;
+    margin: 30px auto;
+    padding: 15px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .fc {
+    font-size: 0.85rem;
+  }
+
+  .fc-toolbar {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Footer Adjustments */
+@media (max-width: 768px) {
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
   }
 
-  .image-about,
-  .image-services {
-    display: none; /* Hide images on smaller screens */
+  footer .social-media a {
+    margin: 0 10px;
   }
 
-  .box-about,
-  .box-description {
-    width: 100%; /* Full width for content */
-  }
-
-  .plan-contents {
-    flex-wrap: wrap;
-  }
-
-  .plan-card {
-    width: 80%;
-    margin: 10% auto;
+  footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
   }
 }
 
 /* Responsive Smartphone */
-@media all and (max-width: 670px) {
+@media (max-width: 670px) {
   .main-image {
-    display: none; /* Hide unnecessary images on small screens */
+    display: none;
   }
 
   .main-text {
@@ -152,206 +293,50 @@
     padding-top: 50px;
   }
 
-  .navbar-option {
-    display: none;
-  }
-
-  .navbar-option.responsive {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 10px;
-  }
-
-  .navbar-option.responsive a {
-    padding: 10px;
-    text-align: center;
-    transition: background-color 0.3s;
-  }
-
-  .navbar-option.responsive a:hover {
-    background-color: #1a6b54;
-    color: #fff;
-  }
-
-  .right-navbar a.hamburger {
-    display: block;
-  }
-
-  .blog {
-    width: 100%;
-  }
-
-  .section-title h3 {
-    font-size: 1.2rem;
-  }
-
   .review {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 40px; /* Add space below the section */
+    margin-bottom: 40px;
     text-align: center;
   }
 
   .review-information {
-    width: 90%; /* Reduce width for better spacing */
-    margin: 0 auto; /* Center content */
-  }
-
-  .rounded-image {
-    width: 70px; /* Adjust reviewer image size */
-    height: 70px;
-    margin-bottom: 10px; /* Add spacing below image */
-    position: relative; /* Prevent floating or overlap */
-  }
-
-  .reviewer-name {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-    margin-bottom: 1px;
-  }
-
-  /* "Ready to Book Your Stay?" Section */
-  .book-now-section {
-    padding: 20px; /* Add consistent padding */
-    text-align: center; /* Center-align content */
-  }
-
-  .book-now-section h2 {
-    font-size: 1.5rem; /* Adjust heading size */
-    margin-bottom: 20px; /* Add space below heading */
-  }
-
-  .book-now-section p {
-    font-size: 1rem; /* Adjust paragraph size */
-    margin-bottom: 20px; /* Add space below paragraph */
-    line-height: 1.5; /* Improve readability */
-  }
-
-  .book-now-section .airbnb-link {
-    display: block; /* Ensure the button spans full width */
-    max-width: 250px; /* Set a max width for the button */
-    margin: 10px auto; /* Center the button with spacing */
-    padding: 12px; /* Add padding for better touch area */
-    font-size: 1rem; /* Adjust button font size */
-  }
-
-  /* Fix Overlap of Airbnb Button and Reviewer */
-  .airbnb-link {
-    margin-top: 40px; /* Add space above button */
-  }
-
-  /* Ensure calendar container aligns properly */
-  .calendar-container {
-    width: 100%; /* Make full width */
-    margin: 30px auto; /* Add spacing around the calendar */
-  }
-}
-
-/* Additional Fix for Very Small Screens */
-@media all and (max-width: 485px) {
-  /* Adjust reviewer image for smallest screens */
-  .rounded-image {
-    width: 60px; /* Smaller image size */
-    height: 60px;
-  }
-
-  .review {
-    margin-bottom: 20px; /* Add smaller spacing */
-  }
-
-  /* Reduce font sizes further */
-  .book-now-section h2 {
-    font-size: 1.3rem;
-  }
-
-  .book-now-section p {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-  }
-
-  .book-now-section .airbnb-link {
-    max-width: 200px; /* Adjust button width */
-    font-size: 0.9rem;
-  }
-
-  /* Ensure calendar container aligns properly */
-  .calendar-container {
-    width: 100%; /* Make full width */
-    margin: 20px auto; /* Add spacing around the calendar */
-  }
-}
-
-/* Responsive lower screen */
-@media screen and (max-width: 600px) {
-  .services {
-    display: inline-block;
-  }
-
-  .grid-images {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .plan-card {
-    width: 100%;
-    margin: 10px 0;
-  }
-}
-
-/* Lower smartphone screen */
-@media screen and (max-width: 485px) {
-  .container {
-    padding: 0 20px;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  .main-text {
-    width: 100%;
-  }
-
-  .main-contents {
-    height: auto;
-    text-align: center;
-  }
-
-  .container-main {
-    width: 100%;
-    padding-top: 20px;
-  }
-
-  .box-about {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .plan-card {
     width: 90%;
     margin: 0 auto;
   }
-}
 
-/* Responsive lowest screen */
-@media screen and (max-width: 385px) {
-  .blog-info {
+  .rounded-image {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+
+  .reviewer-name {
+    font-size: 1rem;
+    margin-bottom: 1px;
+  }
+
+  .book-now-section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .book-now-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .book-now-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .book-now-section .airbnb-link {
     display: block;
-  }
-
-  .blog-author {
-    padding: 20px 0 0 0;
-  }
-
-  .blog-contents h4 {
-    width: 100%;
-  }
-
-  .blog-contents p {
-    width: 90%;
+    max-width: 250px;
+    margin: 10px auto;
+    padding: 12px;
+    font-size: 1rem;
   }
 }
