@@ -120,8 +120,8 @@ h5 {
 
 .container-main {
   width: 60%;
-  margin: 0 0 0 200px;
-  padding-top: 190px;
+  margin: 0 0 0 150px;
+  padding-top: 280px;
 }
 
 .container-main p {
@@ -130,7 +130,7 @@ h5 {
 
 .main-contents {
   display: flex;
-  height: 700px;
+  height: 1000px;
 }
 
 .main-text {
@@ -141,7 +141,8 @@ h5 {
 
 .main-image {
   height: 100%;
-  width: 50%;
+  width: 70%;
+
   background-image: url('../img/OutsideTree.jpeg');
   image-rendering: optimizeSpeed;
   background-repeat: no-repeat;
