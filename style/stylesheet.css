@@ -939,11 +939,12 @@ footer span {
 /* Adjust the calendar container size */
 /* Remove unintended artifact under the calendar */
 .calendar-container {
-  margin-bottom: 0 !important; /* Remove unnecessary spacing below */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow only for the container */
-
-  border-radius: 8px; /* Keep corners smooth */
-  background-color: #ffffff; /* Ensure clean background */
+  margin: 0; /* Remove margin around the calendar */
+  padding: 0; /* Remove any padding */
+  background-color: transparent; /* Set background to transparent */
+  box-shadow: none; /* Remove shadow */
+  border: none; /* Ensure no border is applied */
+  border-radius: 0; /* Remove any rounded corners */
 }
 
 /* Additional cleanup for pseudo-elements, if any */
