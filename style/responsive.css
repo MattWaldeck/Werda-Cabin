@@ -164,6 +164,8 @@ body {
   .main-text,
   .main-image {
     width: 100%;
+    height: 80%;
+    background-size: cover;
   }
 
   .main-text h1 {
@@ -173,7 +175,8 @@ body {
 
   .main-text p {
     font-size: 1rem;
-    padding-top: 50px;
+    padding-top: 10px;
+    text-align: center;
   }
   .container-main {
     display: flex;
@@ -423,7 +426,7 @@ body {
     width: 5.5rem;
     border-radius: 100%;
     margin-right: 0px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .reviewer-name {
@@ -434,7 +437,7 @@ body {
   }
 
   .reviews-section {
-    padding-bottom: 420px;
+    padding-bottom: 550px;
   }
 
   /* Book Now Section */
