@@ -59,7 +59,10 @@ h3::after {
 }
 
 h5 {
-  margin: 15px 0;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
 }
 
 .main-section {
@@ -554,7 +557,7 @@ h5 {
 
 .more-information-section {
   padding-top: 10px;
-  padding-bottom: 160px;
+  padding-bottom: 210px;
   background-color: #ffffff00;
 }
 
@@ -562,7 +565,7 @@ h5 {
   display: inline-block;
   width: 100%;
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 1rem; /* Increased font size */
   color: rgb(0, 0, 0);
 }
 
@@ -571,7 +574,8 @@ h5 {
 }
 
 .more-information-section p {
-  font-size: 1rem;
+  font-size: 1.3rem; /* Increased font size for paragraphs */
+  font-weight: 400; /* Optional: Add weight for better visibility */
 }
 
 .icon {
