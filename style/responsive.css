@@ -89,6 +89,7 @@ body {
   .more-information-section .more-information-section p,
   .more-information-section a {
     text-align: center;
+    padding-left: 9%;
     font-size: 1rem;
   }
 
