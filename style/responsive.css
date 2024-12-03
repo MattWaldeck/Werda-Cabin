@@ -33,7 +33,11 @@ body {
 /* Responsive Tablet */
 @media (max-width: 1000px) {
   h4 {
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+  h5 {
+    margin: 1;
+    text-align: left;
   }
 
   .rounded {
@@ -77,7 +81,7 @@ body {
   }
 
   .more-information-section {
-    padding-top: 10px;
+    padding-top: 1px;
     padding-bottom: 160px;
     background-color: #ffffff00;
     text-align: center;
@@ -85,7 +89,7 @@ body {
   .more-information-section .more-information-section p,
   .more-information-section a {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .company-info,
