@@ -229,7 +229,7 @@ h5 {
 }
 
 .image-services {
-  width: 50%;
+  width: 70%;
   margin-left: 30px;
 }
 
@@ -295,7 +295,7 @@ h5 {
   color: rgba(199, 43, 191, 1);
 }
 .red {
-  padding: 17px 18px;
+  padding: 17px 19px;
   background-color: rgba(199, 43, 191, 0.1);
   color: rgb(199, 43, 43);
 }
@@ -325,12 +325,6 @@ h5 {
   font-size: x-large;
 }
 
-.price span {
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: rgb(59, 59, 59);
-}
-
 .plan-card {
   width: 100%;
   text-align: center;
@@ -351,37 +345,9 @@ h5 {
   border-radius: 7px;
 }
 
-.select-package {
-  padding-top: 30px;
-}
-
-.select-package a {
-  padding: 14px 24px;
-  border: 1px solid rgba(60, 60, 60, 0.2);
-  border-radius: 7px;
-  font-size: 0.8rem;
-  color: #31b077;
-}
-
-.select-package a:hover {
-  background-color: #1a6b54;
-  color: #fff;
-  transition: 0.5s all;
-}
-
 .blog-container {
   max-width: 450px;
   margin: 0 auto;
-}
-
-.blog-and-news {
-  margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
-
-.blog-contents {
-  display: flex;
 }
 
 .heading-blog {
@@ -391,11 +357,6 @@ h5 {
 
 .heading-blog h2 {
   margin-bottom: -2px;
-}
-
-.blog {
-  width: 50%;
-  margin-right: 30px;
 }
 
 .second {
@@ -408,65 +369,6 @@ h5 {
 
 .fa-user {
   color: #284f99;
-}
-
-.blog-author span {
-  background-color: rgba(40, 80, 153, 0.1);
-  border-radius: 100px;
-  padding: 20px;
-}
-
-.blog img {
-  margin-bottom: 20px;
-}
-
-.rounded {
-  margin-right: 15px;
-}
-
-.blog-info {
-  display: flex;
-}
-
-.time-posted {
-  display: flex;
-  flex-direction: row;
-}
-
-.blog-author {
-  display: flex;
-  flex-direction: row;
-  padding-left: 100px;
-}
-
-.time-posted h4 {
-  margin-top: 16px;
-  font-weight: normal;
-}
-
-.blog-author h4 {
-  margin-top: 16px;
-  font-weight: normal;
-}
-
-.blog-content h4 {
-  font-size: 1.3rem;
-  width: 85%;
-}
-
-.blog-content p {
-  width: 80%;
-}
-
-.time-posted span {
-  background-color: rgba(128, 88, 36, 0.1);
-  border-radius: 100px;
-  padding: 20px;
-}
-
-.blog img {
-  width: 100%;
-  border-radius: 10px;
 }
 
 .section-title {
@@ -503,20 +405,11 @@ h5 {
   top: 7%;
 }
 
-.arrow-buttons {
-  float: right;
-}
-
 .material-icons-outlined {
   background-color: rgba(60, 60, 60, 0.2);
   font-size: 48px !important;
   border-radius: 5px;
   margin-left: 20px;
-}
-
-.arrow-buttons span:hover {
-  background-color: rgba(60, 60, 60, 0.6);
-  transition: all 0.5s;
 }
 
 .fa-quote-left {
@@ -609,19 +502,6 @@ h5 {
   width: 20%;
 }
 
-.newsletter a {
-  padding-bottom: 7px;
-}
-
-.newsletter {
-  float: left;
-  width: 30%;
-}
-
-.newsletter p {
-  width: 90%;
-}
-
 input {
   width: 190px;
   height: 40px;
@@ -633,21 +513,6 @@ input {
   border-bottom-left-radius: 2px;
   float: left;
   color: rgba(60, 60, 60, 0.8);
-}
-
-.email-submit {
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.7rem;
-  width: 80px;
-  background-color: #1a6b54;
-  color: #fff;
-  border: none;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  cursor: pointer;
 }
 
 .social-media {
@@ -1007,4 +872,12 @@ button,
 a {
   padding: 10px;
   touch-action: manipulation;
+}
+.developer-link {
+  text-decoration: underline;
+  color: #ffffff; /* Adjust to match your theme */
+}
+
+.developer-link:hover {
+  color: #cccccc; /* Hover effect */
 }
