@@ -440,7 +440,7 @@ h5 {
 .reviewer-name {
   padding-top: 20px;
   margin-bottom: -5px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-top: 80px;
 }
 
@@ -467,7 +467,7 @@ h5 {
 }
 
 .more-information-section p {
-  font-size: 1.3rem; /* Increased font size for paragraphs */
+  font-size: 1rem; /* Increased font size for paragraphs */
   font-weight: 400; /* Optional: Add weight for better visibility */
 }
 

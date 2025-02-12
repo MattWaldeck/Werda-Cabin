@@ -87,10 +87,12 @@ body {
     text-align: center;
   }
   .more-information-section .more-information-section p,
-  .more-information-section a {
-    text-align: center;
-    padding-left: 9%;
-    font-size: 1rem;
+  .more-information-section .more-information-section a {
+    text-align: center; /* Horizontally center text */
+    margin: 0 auto; /* Center the elements within their container */
+    font-size: 1rem; /* Consistent font size */
+    padding-left: 0; /* Remove any unwanted left padding */
+    display: inline-block; /* Ensure proper centering for inline elements */
   }
 
   .company-info,
@@ -169,7 +171,7 @@ body {
   .main-text,
   .main-image {
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-size: cover;
   }
 
@@ -437,7 +439,7 @@ body {
   .reviewer-name {
     padding-top: 20px;
     margin-bottom: -5px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-top: -10px;
   }
 
