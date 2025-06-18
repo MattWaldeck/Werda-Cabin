@@ -1,644 +1,167 @@
-/* General Reset for Consistency */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden;
-}
-/* Bigger Screen Responsive */
-@media (max-width: 1200px) {
-  .main-text {
-    width: 70%;
+@media (max-width: 992px) {
+  .about-contents {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
   }
 
-  .main-image {
-    width: 30%;
-  }
-}
-
-/* Fix Form */
-@media (max-width: 1055px) {
-  input {
-    width: 170px;
-  }
-
-  .company-info p {
-    margin-bottom: 0px;
-  }
-}
-
-/* Responsive Tablet */
-@media (max-width: 1000px) {
-  h4 {
-    font-size: 1rem;
-  }
-  h5 {
-    margin: 1;
-    text-align: left;
-  }
-
-  .rounded {
-    margin-right: 10px;
-  }
-
-  .blog-author {
-    padding-left: 50px;
-  }
-
-  .second {
-    margin: 0;
-  }
-
-  .section-title h3 {
-    font-size: 1.5rem;
-  }
-
+  .services-contents,
   .review {
-    flex-wrap: wrap;
-    padding-bottom: 200px;
-  }
-
-  .image-review {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 40px;
-  }
-
-  .review-information {
-    top: 80px;
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .image-review img {
-    width: 100%;
-  }
-
-  .review-box {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .more-information-section {
-    padding-top: 1px;
-    padding-bottom: 160px;
-    background-color: #ffffff00;
-    text-align: center;
-  }
-  .more-information-section .more-information-section p,
-  .more-information-section .more-information-section a {
-    text-align: center; /* Horizontally center text */
-    margin: 0 auto; /* Center the elements within their container */
-    font-size: 1rem; /* Consistent font size */
-    padding-left: 0; /* Remove any unwanted left padding */
-    display: inline-block; /* Ensure proper centering for inline elements */
-  }
-
-  .company-info,
-  .company-info p,
-  .legal,
-  .resources,
-  .newsletter {
-    width: 100%;
-
+    max-width: 100%;
     margin: 0 auto;
+    display: block;
   }
 
-  .newsletter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .newsletter p {
-    margin-top: 0px;
+  /* On tablet, show 3 columns in the grid */
+  .plan-contents {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Navbar Fixes */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 10px;
+  h1,
+  .main-text h1 {
+    font-size: 2rem;
+    line-height: 2rem;
   }
 
-  .hamburger {
-    display: block;
-    cursor: pointer;
+  h2,
+  .box-about h2,
+  .box-description h2 {
+    font-size: 2.2rem;
+  }
+
+  h3,
+  .section-title h3 {
+    font-size: 2rem;
+  }
+
+  .about-section,
+  .our-services,
+  .best-plans,
+  .reviews-section-wrapper,
+  .book-now-section {
+    padding: 1rem 1rem;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
   }
 
   .navbar-option {
     display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    margin-top: 1rem;
+    order: 3;
   }
 
   .navbar-option.responsive {
     display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 100%;
-  }
-
-  .navbar-option.responsive a {
-    padding: 10px 0;
-    text-align: center;
-  }
-}
-
-/* Main Section Adjustments */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2.2rem;
-    margin: 0;
-    line-height: 70px;
-  }
-
-  h2 {
-    font-size: 2.3rem;
-  }
-  .calendar-container {
-    display: none;
-  }
-  .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px;
-  }
-  .main-contents {
-    flex-direction: column;
-  }
-
-  .main-text,
-  .main-image {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-  }
-
-  .main-text h1 {
-    font-size: 1.6rem;
-    line-height: 1.3;
-  }
-
-  .main-text p {
-    font-size: 1rem;
-    padding-top: 10px;
-    text-align: center;
-  }
-  .container-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    width: 100%;
-    margin: 0px;
-    padding: 20px;
-    padding-top: 15px;
-  }
-  /* Navbar */
-  .navbar {
-    display: flex;
-
-    align-items: center; /* Align items vertically */
-    padding: 15px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding: 1px 1px;
-    background-color: #fff;
-    z-index: 1000;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .logo {
-    flex-shrink: 4; /* Ensure the logo doesn't shrink */
-    margin-right: 1px; /* Add spacing between the logo and links */
-  }
-
-  .logo a {
-    font-size: 1rem; /* Adjust font size for readability */
-    font-weight: bold;
-    color: #1a6b54;
-    text-decoration: none;
-  }
-
-  .navbar-option {
-    display: flex; /* Align items side by side */
-    justify-content: flex-start; /* Align items to the left */
-    gap: 20px; /* Spacing between links */
-    flex-grow: 1; /* Take up remaining space */
   }
 
   .navbar-option a {
-    font-size: 0.9rem; /* Slightly larger font size for better readability */
-    font-weight: bold;
-    color: #1a6b54;
-    text-decoration: none;
-    white-space: nowrap; /* Prevent text wrapping */
+    padding: 1rem 0;
+    border-top: 1px solid #f0f0f0;
   }
 
-  .navbar-option a:hover {
-    border-bottom: 1px solid #1a6b54;
-    transition: 0.3s ease-in-out;
-  }
-
-  .right-navbar {
-    display: none; /* Hide right-navbar for mobile */
-  }
-
-  .hamburger {
-    display: none; /* Add hamburger menu support if required */
-  }
-
-  /* ABOUT SECTION */
-
-  .about-section {
-    padding-top: 50px;
-  }
-
-  .about-contents {
+  .right-navbar .hamburger {
     display: block;
-  }
-
-  .image-about {
-    width: 100%;
-    margin-right: 30px;
-  }
-
-  .box-about {
-    width: 100%;
-    margin: 0;
-  }
-
-  .box-contents {
-    width: 100%;
-  }
-
-  .box-contents h2 {
-    font-size: 20px;
-    margin: 0;
-  }
-
-  .box-contents h2::after {
-    content: '';
-    width: 100%;
-    border-top: none;
-  }
-
-  .image-about img {
-    width: 100%;
-    border-radius: 7px;
-  }
-
-  /* Good To Know Section */
-  .our-services {
-    padding-top: 50px;
-    padding-bottom: 40px;
-  }
-
-  .services-contents {
-    display: block;
-  }
-
-  .image-services {
-    width: 100%;
-    margin-left: 0px;
-  }
-
-  .image-services img {
-    width: 100%;
-    border-radius: 7px;
-  }
-
-  .box-description {
-    width: 100%;
-    margin-right: 1px;
-  }
-
-  .box-description h2 {
-    margin: 0;
-  }
-
-  .box-description h2::after {
-    content: '';
-    width: 100%;
-    border-top: none;
-  }
-
-  .box-description p {
-    width: 100%;
-  }
-
-  .services {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-
-  .services-icon {
-    padding: 10px 0;
-  }
-
-  .services-icon .fa {
-    border-radius: 50%;
-    margin-right: 20px;
-  }
-
-  .grid-images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Three columns in the grid */
-    gap: 10px;
-
-    justify-content: center; /* Center the grid */
-    margin-top: 30px;
-  }
-  /* Interior/Exterior */
-  .heading-blog {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-
-  .blog-container {
-    max-width: 550px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .blog-and-news {
-    margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: auto;
-  }
-
-  .blog-contents {
-    display: flex;
-  }
-
-  .plan-card {
-    flex: none; /* Each card takes up ~30% of the row */
-    max-width: 100%; /* Maintain consistent card size */
-    border-radius: 12px; /* Rounded corners for each card */
-    overflow: hidden; /* Ensure image edges stay rounded */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for each card */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fff; /* Add a white background for uniformity */
-  }
-
-  .plan-card img {
-    width: 100%;
-    height: 100%; /* Maintain image aspect ratio */
-    display: block; /* Prevent inline space below images */
-    margin-left: 0px;
-  }
-  .plan-contents {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center; /* Center align the images */
-    gap: 10px; /* Add spacing between the images */
-    width: 100%;
-    margin-left: 0px;
-  }
-
-  /* See Satisfied Traveler Reviews */
-  .section-title {
-    font-style: italic;
-    text-align: center;
+    cursor: pointer;
     font-size: 1.5rem;
-    padding-bottom: 20px;
-  }
-  .review {
-    display: flex;
   }
 
-  .image-review {
-    width: 100%;
-    margin-right: 0rem;
-  }
-  .review-box {
-    width: 100%;
-    margin-left: 0rem;
-    display: inline-block;
-    position: relative;
-    padding: 10px;
-    padding-top: 80px;
-  }
-  .review-information {
-    position: absolute;
-    top: 1%;
+  .right-navbar .bookNow {
+    display: none;
   }
 
-  .rounded-image {
-    float: left;
-    width: 5.5rem;
-    border-radius: 100%;
-    margin-right: 0px;
-    margin-top: 30px;
+  .about-section .image-about {
+    margin-bottom: 2rem;
   }
 
-  .reviewer-name {
-    padding-top: 20px;
-    margin-bottom: -5px;
-    font-size: 1rem;
-    margin-top: -10px;
-  }
-
-  .reviews-section {
-    padding-bottom: 550px;
-  }
-
-  /* Book Now Section */
-  .book-now-section {
-    padding: 10 px 20px;
-    background-color: #ffffff; /* Warm background color */
-    text-align: center;
-    border-top: 2px solid #ddd;
-  }
-
-  .book-now-section h2 {
-    font-size: 2.5rem;
-    color: #5a2d82; /* Unique color for the title */
-    margin-bottom: 20px;
-  }
-
-  .book-now-section p {
-    font-size: 1.2rem;
-    color: rgba(60, 60, 60, 0.8);
-    margin-bottom: 30px;
-  }
-
-  .book-now-section .ical-link,
-  .book-now-section .airbnb-link {
-    display: inline-block;
-    background-color: #1a6b54;
-    color: #fff;
-    text-decoration: none;
-
-    margin: 10px;
-    border-radius: 5px;
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-  .company-info {
-    float: left;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 20 px;
-    padding-bottom: 20 px;
-    background-color: #ffffff;
-    border-radius: 80px;
-  }
-
-  .company-info p {
-    width: 80%;
-  }
-  footer {
-    background-color: #1a6b54; /* Background color of the footer */
-    width: 100%;
-    padding: 0; /* Remove padding */
-    color: #fff; /* Text color */
-    text-align: center;
-  }
-
-  footer .container {
-    display: flex; /* Align child elements in a row */
-    justify-content: space-between; /* Space out content */
-    align-items: center; /* Center align items vertically */
-    max-width: 100%; /* Limit the width of the footer content */
-    margin: 0 auto; /* Center content horizontally */
-    padding: 20px 20px; /* Add only horizontal padding */
-  }
-}
-
-/* Review Section Fixes */
-@media (max-width: 768px) {
-  .reviews-section {
-    margin-bottom: 50px;
-  }
-
-  .review {
+  .features-list {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+  }
+
+  .best-plans {
     text-align: center;
-    padding: 20px 10px;
-    margin-bottom: 30px;
   }
 
-  .review-information {
-    width: 100%;
-    margin: 20px auto;
-    padding: 10px;
-    line-height: 1.6;
+  /* --- CSS-ONLY HORIZONTAL SCROLL FOR GALLERIES --- */
+  .grid-images,
+  .plan-contents {
+    display: flex; /* 1. Change display from grid to flex */
+    overflow-x: auto; /* 2. Enable horizontal scrolling */
+    gap: 1rem; /* 3. Keep the gap between items */
+
+    /* 4. Optional: Add scroll-snapping for a better UX */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    padding-bottom: 1rem; /* Add space for the scrollbar if it appears */
   }
 
-  .review-box {
-    margin: 30px 0;
+  /* Target the direct children of the scrolling containers */
+  .grid-images > .image-card,
+  .plan-contents > .plan-card {
+    flex: 0 0 75%; /* 5. Don't grow, don't shrink, and set base width to 75% of the container */
+    width: 75%;
+    scroll-snap-align: center; /* 6. Snap to the center of the item */
   }
+  /* --- END OF HORIZONTAL SCROLL STYLES --- */
 
-  .rounded-image {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
-  }
-
-  .reviewer-name {
-    font-size: 1rem;
-    margin-bottom: 5px;
-  }
-
-  .italic {
-    margin: 10px 0;
-    font-size: 0.9rem;
-  }
-}
-
-/* "Book Now" Section Adjustments */
-@media (max-width: 768px) {
-  .book-now-section {
-    padding: 30px 15px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+  .review {
     text-align: center;
-    background-color: #f9f9f9;
-    border-radius: 10px;
   }
 
-  .book-now-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+  .review .image-review img {
+    margin-bottom: 2rem;
   }
 
-  .book-now-section p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    line-height: 1.6;
-  }
-
-  .book-now-section .airbnb-link {
-    display: block;
-    max-width: 250px;
-    margin: 15px auto;
-    padding: 12px;
-    font-size: 1rem;
-    text-align: center;
-    background-color: #1a6b54;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-
-  .airbnb-link:hover {
-    background-color: #14513f;
-  }
-}
-
-/* Calendar Section */
-@media (max-width: 768px) {
-  .calendar-container {
-    width: 100%;
-    margin: 30px auto;
-    padding: 15px;
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .fc {
-    font-size: 0.85rem;
-  }
-
-  .fc-toolbar {
-    display: flex;
-    flex-wrap: wrap;
+  .reviewer {
     justify-content: center;
   }
-}
 
-/* Footer Adjustments */
-@media (max-width: 768px) {
+  .book-now-section h2,
+  .section-title h3 {
+    font-size: 2.2rem;
+  }
+
+  .calendar-container {
+    display: none;
+  }
+
   footer .container {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-text h1 {
+    font-size: 2rem;
   }
 
-  footer .social-media a {
-    margin: 0 10px;
+  h2,
+  .box-about h2,
+  .box-description h2 {
+    font-size: 1.8rem;
   }
 
-  footer p {
-    margin-top: 10px;
-    font-size: 0.9rem;
-  }
-  .developer-link {
-    text-decoration: underline;
-    color: #ffffff; /* Adjust to match your theme */
-  }
-
-  .developer-link:hover {
-    color: #cccccc; /* Hover effect */
+  /* Make images slightly smaller on the smallest screens */
+  .grid-images > .image-card,
+  .plan-contents > .plan-card {
+    flex-basis: 85%;
+    width: 85%;
   }
 }
