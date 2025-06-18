@@ -49,13 +49,13 @@
 
   .main-contents {
     padding-top: 0rem;
-    padding-bottom: 90px; /* ADDED: Lifts button above arrow */
+    padding-bottom: 55px; /* ADDED: Lifts button above arrow */
   }
   /* --- END OF HERO SECTION ALIGNMENT --- */
 
   /* --- SCROLL DOWN ARROW RESPONSIVE --- */
   .scroll-down-container {
-    bottom: 20px; /* Move arrow up slightly on smaller screens */
+    bottom: 10px; /* Move arrow up slightly on smaller screens */
   }
 
   .scroll-down-arrow {

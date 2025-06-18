@@ -126,7 +126,7 @@ a {
   position: relative;
   z-index: 2;
   padding: 0 20px;
-  padding-bottom: 90px; /* ADDED: Lifts the button above the scroll arrow */
+  padding-bottom: 60px; /* ADDED: Lifts the button above the scroll arrow */
 }
 
 .main-text h1 {
@@ -166,7 +166,7 @@ a {
 /* --- SCROLL DOWN ARROW STYLES ADDED --- */
 .scroll-down-container {
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
