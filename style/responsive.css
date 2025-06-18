@@ -41,6 +41,17 @@
     font-size: 2rem;
   }
 
+  /* --- NEW CODE TO ALIGN HERO TEXT TO TOP --- */
+  .main-section {
+    align-items: flex-start; /* Aligns content to the top */
+    height: 90vh; /* Optional: reduce height slightly on mobile */
+  }
+
+  .main-contents {
+    padding-top: 0rem; /* Pushes text down from the top edge */
+  }
+  /* --- END OF NEW CODE --- */
+
   .about-section,
   .our-services,
   .best-plans,
@@ -145,6 +156,27 @@
     flex-direction: column;
     gap: 1.5rem;
   }
+
+  /* --- REORDERING FOR CONTACT SECTION --- */
+  .gallery-and-info-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .more-information-section {
+    order: 1; /* This will be the first item */
+    padding-top: 2rem !important; /* Add some space above */
+    padding-bottom: 0 !important; /* Remove bottom padding if needed */
+  }
+
+  .our-services {
+    order: 2; /* This will appear second */
+  }
+
+  .best-plans {
+    order: 3; /* This will appear last */
+  }
+  /* --- END OF REORDERING STYLES --- */
 }
 
 @media (max-width: 480px) {
