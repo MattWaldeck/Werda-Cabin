@@ -436,7 +436,7 @@ a {
 
 .airbnb-link {
   display: inline-block;
-  background-color: #ff5a5f;
+  background-color: #e67e22;
   color: #fff;
   padding: 1rem 2.5rem;
   border-radius: 8px;
@@ -447,7 +447,7 @@ a {
 }
 .airbnb-link1 {
   display: inline-block;
-  background-color: #ff5a5f;
+  background-color: #e67e22;
   color: #fff;
   padding: 1rem 2.5rem;
   border-radius: 8px;
@@ -458,11 +458,11 @@ a {
 }
 
 .airbnb-link:hover {
-  background-color: #e04246;
+  background-color: #d35400;
   transform: translateY(-2px);
 }
 .airbnb-link1:hover {
-  background-color: #e04246;
+  background-color: #d35400;
   transform: translateY(-2px);
 }
 
