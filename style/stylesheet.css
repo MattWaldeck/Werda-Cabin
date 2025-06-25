@@ -445,8 +445,23 @@ a {
   margin-bottom: 2rem;
   transition: background-color 0.3s, transform 0.2s;
 }
+.airbnb-link1 {
+  display: inline-block;
+  background-color: #ff5a5f;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
 
 .airbnb-link:hover {
+  background-color: #e04246;
+  transform: translateY(-2px);
+}
+.airbnb-link1:hover {
   background-color: #e04246;
   transform: translateY(-2px);
 }
