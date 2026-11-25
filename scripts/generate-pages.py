@@ -326,9 +326,9 @@ OUTSIDE = [
     ('WideCabinImage', 'Werda Cabin and its deck beside the farm dam'),
     ('Window', 'Black cabin with mirror-glass windows and mountains glowing at sunset'),
     ('CabinWindow', 'Cabin exterior with a stone path and the mountains behind'),
-    ('OutsideTree', 'Covered deck with an outdoor dining table and boulder garden'),
-    ('OutsideatRock', 'Werda Cabin among natural rock formations'),
     ('KantvanHuis', 'Side view of the cabin, deck and hot tub shelter under the peaks'),
+    ('OutsideatRock', 'Werda Cabin among natural rock formations'),
+    ('OutsideTree', 'Covered deck with an outdoor dining table and boulder garden'),
     ('Chairs', 'Two chairs on the deck overlooking the valley'),
     ('HotTub', 'Wood-fired hot tub ready for guests'),
     ('TubMat', 'Soaking in the wood-fired hot tub with a view of the dam'),
@@ -437,7 +437,7 @@ home = head(
     'Guest Favorite tiny home for two on a working farm in Tulbagh. Wood-fired hot tub, fireplace, dam and mountain views. Rated 4.96 from 108 reviews.',
     '/',
     [LODGING_LD],
-    preload='WideCabinImage',
+    preload='hero-home',
 ) + header('/', home_hero) + f'''
     <main id="main">
 {QUICK_FACTS}
@@ -492,7 +492,7 @@ home = head(
             <h2 id="gallery-title">Inside &amp; out</h2>
             <p>Step into the cabin's warm interior and the farmland that surrounds it.</p>
           </div>
-          {gallery_grid([VIEWS[6], INSIDE[11], OUTSIDE[10], INSIDE[0], VIEWS[7], OUTSIDE[12]])}
+          {gallery_grid([INSIDE[0], OUTSIDE[1], VIEWS[6], INSIDE[11], VIEWS[1], OUTSIDE[10]])}
           <div class="section-cta">
             <a href="/gallery/" class="btn btn-outline">View all photos</a>
           </div>
@@ -539,7 +539,7 @@ cabin = head(
     'Inside Werda Cabin: a tiny home for two with a queen bed, indoor fireplace, fully equipped kitchen, wood-fired hot tub and self check-in on a Tulbagh farm.',
     '/cabin/',
     [crumbs('The Cabin', '/cabin/')],
-    preload='KantvanHuis',
+    preload='hero-cabin',
 ) + header('/cabin/', page_hero(
     'The Cabin', 'A tiny home with a big view',
     "Everything you need for a slow weekend for two — and nothing you don't.",
@@ -658,7 +658,7 @@ gallery = head(
     f'Browse {total} photos of Werda Cabin: the timber interior, wood-fired hot tub, private deck and the dam and mountain views of the Tulbagh Valley.',
     '/gallery/',
     [crumbs('Gallery', '/gallery/')],
-    preload='FarmSunsetAerial',
+    preload='hero-gallery',
 ) + header('/gallery/', page_hero(
     'Gallery', 'Every corner of the cabin',
     f'{total} photos of the interior, the deck and hot tub, and the valley views. Tap any photo to see it full size.',
@@ -682,7 +682,7 @@ reviews = head(
     'Read what guests say about Werda Cabin in Tulbagh: rated 4.96 out of 5 from 108 reviews, a Guest Favorite in the top 1% of homes on Airbnb.',
     '/reviews/',
     [crumbs('Reviews', '/reviews/')],
-    preload='Chairs',
+    preload='hero-reviews',
 ) + header('/reviews/', page_hero(
     'Reviews', 'Loved by 108 guests',
     'Rated 4.96 out of 5 — a Guest Favorite in the top 1% of homes on Airbnb.',

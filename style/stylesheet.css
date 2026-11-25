@@ -327,7 +327,7 @@ a {
       rgba(20, 28, 20, 0.5) 50%,
       rgba(20, 28, 20, 0.9) 100%
     ),
-    url('../img/web/WideCabinImage.webp') no-repeat center center/cover;
+    url('../img/web/hero-home.webp') no-repeat center center/cover;
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -1069,19 +1069,20 @@ footer p {
 
 .page-hero--cabin {
   background-image: linear-gradient(180deg, rgba(20, 28, 20, 0.45) 0%, rgba(20, 28, 20, 0.1) 35%, rgba(20, 28, 20, 0.85) 100%),
-    url('../img/web/KantvanHuis.webp');
+    url('../img/web/hero-cabin.webp');
+  background-position: center 36%;
 }
 
 .page-hero--gallery {
   background-image: linear-gradient(180deg, rgba(20, 28, 20, 0.45) 0%, rgba(20, 28, 20, 0.1) 35%, rgba(20, 28, 20, 0.85) 100%),
-    url('../img/web/FarmSunsetAerial.webp');
-  background-position: center 40%;
+    url('../img/web/hero-gallery.webp');
+  background-position: center 35%;
 }
 
 .page-hero--reviews {
   background-image: linear-gradient(180deg, rgba(20, 28, 20, 0.45) 0%, rgba(20, 28, 20, 0.1) 35%, rgba(20, 28, 20, 0.85) 100%),
-    url('../img/web/Chairs.webp');
-  background-position: center 70%;
+    url('../img/web/hero-reviews.webp');
+  background-position: center 30%;
 }
 
 /* ============ Highlights ============ */
