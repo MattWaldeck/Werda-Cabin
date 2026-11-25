@@ -1,25 +1,20 @@
 {
-  "name": "hotel-landing-page",
+  "name": "werda-cabin",
   "version": "1.0.0",
-  "description": "Simple Rayal Park Hotels landing page with HTML and CSS",
-  "main": "script.js",
+  "description": "Werda Cabin website: a cosy farm-stay tiny home in the Tulbagh Valley",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint scripts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
-    "eslint-config-airbnb-typescript": "^18.0.0",
-    "vite": "^6.4.2"
+    "eslint": "^8.57.1",
+    "vite": "^6.4.4"
   },
-  "dependencies": {
-    "eslint-config-airbnb": "^19.0.4"
-  }
+  "private": true,
+  "type": "module"
 }
